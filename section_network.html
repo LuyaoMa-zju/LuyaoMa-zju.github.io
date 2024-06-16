@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="content">
+<section>
+    <h1>Network</h1>
+    <p>Contents about computer network. (Not social networking... I'm not good at it.)</p>
+    <h2>HTTP</h2>
+    <h3>HTTP Status Code ｜ HTTP 状态码</h3>
+    <p class="preformatted">
+1xx（信息性状态码）：表示请求已被接收，需要继续处理。
+
+100 Continue：继续发送请求体（如果请求是分两部分的）。
+101 Switching Protocols：服务器已同意客户端的协议切换请求。
+2xx（成功状态码）：表示请求已成功被服务器接收、理解并接受。
+
+200 OK：请求成功。
+201 Created：请求成功，并且服务器创建了新的资源。
+202 Accepted：服务器已接受请求，但尚未处理。
+3xx（重定向状态码）：表示需要进一步的操作以完成请求。
+
+301 Moved Permanently：请求的资源已永久移动到新位置。客户端和搜索引擎应使用新的URL进行资源的请求。搜索引擎会将旧URL的权重（PageRank或者链接权重）传递给新URL，有利于SEO（Search Engine Optimizatioin）。
+<blockquote class="preformatted">关于HTTP 301如何有利于SEO：
+1. 保持用户体验：如果搜索引擎不将权重传递给新URL，用户通过搜索引擎访问新URL时，可能会发现新页面的排名和权重较低，影响用户体验。301重定向有助于保持新页面的排名和可见性。
+2. 防止重复内容：301重定向有助于搜索引擎避免将旧URL和新URL视为重复内容。这种重复可能会导致SEO问题，如降低排名或导致搜索引擎惩罚。通过将权重传递给新URL，搜索引擎可以识别和合并重复内容。
+</blockquote>
+302 Found：请求的资源临时移动到另一个URI。
+304 Not Modified：自从上次请求后，请求的资源未修改。
+4xx（客户端错误状态码）：表示客户端似乎有问题。
+
+400 Bad Request：服务器无法理解请求。
+401 Unauthorized：请求需要用户的身份验证。
+403 Forbidden：服务器理解请求但拒绝执行。
+404 Not Found：服务器找不到请求的资源。
+5xx（服务器错误状态码）：表示服务器在尝试处理请求时遇到了问题。
+
+500 Internal Server Error：服务器遇到了一个意外的情况，阻止了其完成请求。
+501 Not Implemented：服务器不支持请求的功能。
+503 Service Unavailable：服务器当前无法使用（由于超载或停机维护）。
+    </p>
+</section>
+</div>
+</body>
+</html>
