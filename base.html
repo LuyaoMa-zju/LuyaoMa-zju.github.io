@@ -6,7 +6,6 @@
     <title>Luyao Ma</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -21,98 +20,31 @@
         </div>
     </header>
 
-    <div class="sidebar">
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="#section_java">Java</a></li>
-            <li><a href="#section_database">Database</a></li>
-            <li><a href="#section_vscode">VSCode</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <section id="section_java">
-            <h1>Java</h1>
-            <p>Introduction about Java.</p>
-            <h2>JVM (Java Virtual Machine)</h2>
-            <p>
-            JVM是一个抽象的计算机，用于运行Java程序。
+    <div class="main-content">
+        <div class="sidebar">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#section_java">Java</a></li>
+                <li><a href="#section_database">Database</a></li>
+                <li><a href="#section_network">Network</a></li>
+                <li><a href="#section_vscode">VSCode</a></li>
+            </ul>
+        </div>
 
-            它提供了一个运行Java字节码的环境，并负责<u>管理程序执行的内存</u>、提供<u>垃圾回收机制</u>、<u>执行字节码指令</u>等。
-            
-            <p>JVM是<u>Java平台独立性</u>的关键，因为Java程序在编译后生成字节码，JVM可以在任何支持它的系统上执行这些字节码。</p>
-            </p>
-            <p>
-            **字节码（Bytecode）**是一种中间代码，它不是直接针对特定计算机硬件的机器码，而是一种针对虚拟机（如JVM）的指令集。WHY：因为它是平台无关的，可以在任何安装了虚拟机的操作系统上运行。这是Java语言实现“一次编写，到处运行”（Write Once, Run Anywhere）的基础。HOW：源代码经过编译器（如javac）编译成字节码，字节码再由虚拟机解释或编译为机器码执行。虚拟机可以通过即时编译（JIT，Just-In-Time）将字节码转换为机器码，提高执行效率。
-
-            **跨平台性**：字节码可以在不同操作系统上运行，只要该操作系统支持相应的虚拟机。
-
-            **安全性**：字节码经过虚拟机的验证，确保了代码的安全性，避免了一些常见的安全问题，如内存泄漏和缓冲区溢出。
-
-            **优化性能**：虚拟机可以在运行时对字节码进行优化（如JIT编译），提高程序的执行效率。
-
-            </p>
-        </section>
-
-        <section id="section_database">
-            <h1>DataBase</h1>
-            <p>This is the content for section 2.</p>
-            <h2>Subsection 2.1</h2>
-            <p>This is the content for subsection 2.1.</p>
-        </section>
-
-        <section id="section_network">
-            <h1>Network</h1>
-            <p>Contents about computer network. (Not social networking... I'm not good at it.)</p>
-            <h2>HTTP</h2>
-            <h3>HTTP Status Code ｜ HTTP 状态码</h3>
-            <p class="preformatted">
-            1xx（信息性状态码）：表示请求已被接收，需要继续处理。
-
-            100 Continue：继续发送请求体（如果请求是分两部分的）。
-            101 Switching Protocols：服务器已同意客户端的协议切换请求。
-            2xx（成功状态码）：表示请求已成功被服务器接收、理解并接受。
-            
-            200 OK：请求成功。
-            201 Created：请求成功，并且服务器创建了新的资源。
-            202 Accepted：服务器已接受请求，但尚未处理。
-            3xx（重定向状态码）：表示需要进一步的操作以完成请求。
-            
-            301 Moved Permanently：请求的资源已永久移动到新位置。
-            302 Found：请求的资源临时移动到另一个URI。
-            304 Not Modified：自从上次请求后，请求的资源未修改。
-            4xx（客户端错误状态码）：表示客户端似乎有问题。
-            
-            400 Bad Request：服务器无法理解请求。
-            401 Unauthorized：请求需要用户的身份验证。
-            403 Forbidden：服务器理解请求但拒绝执行。
-            404 Not Found：服务器找不到请求的资源。
-            5xx（服务器错误状态码）：表示服务器在尝试处理请求时遇到了问题。
-            
-            500 Internal Server Error：服务器遇到了一个意外的情况，阻止了其完成请求。
-            501 Not Implemented：服务器不支持请求的功能。
-            503 Service Unavailable：服务器当前无法使用（由于超载或停机维护）。
-            </p>
-        </section>
-
-
-        <section id="section_vscode">
-            <h1>Visual Studio Code</h1>
-            <p>Some useful tips for using VS Code.</p>
-            <h2>keybindings | shortcuts | 自定义快捷键</h2>
-            <p>First, press 'Cmd' + 'K' and 'Cmd' + 'S'</p>
-            <p>Click upper right corner: Open Keyboard Shortcurs (JSON) to open `keybindings.json` json.</p>
-            <pre>
-[
-    {
-        "key": "ctrl+e p",
-        "command": "editor.emmet.action.wrapWithAbbreviation",
-        "args": {
-            "abbreviation": "p"
-        },
-        "when": "editorHasSelection && editorTextFocus"
-    }
-]<code>
-         </section>
+        <div class="content">
+            <section id="section_java">
+                <iframe class="iframe-container" src="section_java.html"></iframe>
+            </section>
+            <section id="section_database">
+                <iframe class="iframe-container" src="section_database.html"></iframe>
+            </section>
+            <section id="section_network">
+                <iframe class="iframe-container" src="section_network.html"></iframe>
+            </section>
+            <section id="section_vscode">
+                <iframe class="iframe-container" src="section_vscode.html"></iframe>
+            </section>
+        </div>
     </div>
 </body>
 </html>
