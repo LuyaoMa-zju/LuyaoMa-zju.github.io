@@ -26,10 +26,14 @@
 3xx（重定向状态码）：表示需要进一步的操作以完成请求。
 
 301 Moved Permanently：请求的资源已永久移动到新位置。客户端和搜索引擎应使用新的URL进行资源的请求。搜索引擎会将旧URL的权重（PageRank或者链接权重）传递给新URL，有利于SEO（Search Engine Optimizatioin）。
+</p>
+
 <blockquote class="preformatted">关于HTTP 301如何有利于SEO：
 1. 保持用户体验：如果搜索引擎不将权重传递给新URL，用户通过搜索引擎访问新URL时，可能会发现新页面的排名和权重较低，影响用户体验。301重定向有助于保持新页面的排名和可见性。
 2. 防止重复内容：301重定向有助于搜索引擎避免将旧URL和新URL视为重复内容。这种重复可能会导致SEO问题，如降低排名或导致搜索引擎惩罚。通过将权重传递给新URL，搜索引擎可以识别和合并重复内容。
 </blockquote>
+
+<p class="preformatted">
 302 Found：请求的资源临时移动到另一个URI。
 304 Not Modified：自从上次请求后，请求的资源未修改。
 4xx（客户端错误状态码）：表示客户端似乎有问题。
@@ -43,7 +47,22 @@
 500 Internal Server Error：服务器遇到了一个意外的情况，阻止了其完成请求。
 501 Not Implemented：服务器不支持请求的功能。
 503 Service Unavailable：服务器当前无法使用（由于超载或停机维护）。
-    </p>
+</p>
+
+<h2>其他问题</h2>
+<p class="preformatted">
+GET 和 POST 幂等，为什么会幂等，幂等性控制
+
+HTTP有哪些缓存
+
+服务器查看网络连接：netstat 或 ss
+netstat -a 所有；netstat -l 查看所有监听窗口；
+
+socket是什么，长连接
+
+
+</p>
+
 </section>
 </div>
 </body>

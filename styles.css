@@ -52,7 +52,7 @@ header .highlight, header .current a {
 }
 
 .sidebar {
-    width: 100px;
+    width: 80px;
     background-color: #f4f4f4;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -89,7 +89,7 @@ header .highlight, header .current a {
 .iframe-container {
     width: 100%;
     border: none;
-    height: 800px;
+    height: 1200px;
 }
 
 .content section {
@@ -127,7 +127,7 @@ code {
 }
 
 .preformatted {
-    display: block;
+    /* display: block; */
     white-space: pre-wrap; /* 支持自动换行 */
     text-indent: 0; /* 取消段落首部缩进 */
 }
