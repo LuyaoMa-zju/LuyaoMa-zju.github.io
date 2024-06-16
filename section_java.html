@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="content">
+<section>
+    <h1>Java</h1>
+    <p>Introduction about Java.</p>
+    <h2>JVM (Java Virtual Machine)</h2>
+    <p class="preformatted">
+JVM是一个抽象的计算机，用于运行Java程序。它提供了一个运行Java字节码的环境，并负责<u>管理程序执行的内存</u>、提供<u>垃圾回收机制</u>、<u>执行字节码指令</u>等。
+
+JVM是<u>Java平台独立性</u>的关键，因为Java程序在编译后生成字节码，JVM可以在任何支持它的系统上执行这些字节码。
+
+<blockquote>
+<b>字节码（Bytecode）</b>是一种中间代码，它不是直接针对特定计算机硬件的机器码，而是一种针对虚拟机（如JVM）的指令集。WHY：因为它是平台无关的，可以在任何安装了虚拟机的操作系统上运行。这是Java语言实现“一次编写，到处运行”（Write Once, Run Anywhere）的基础。HOW：源代码经过编译器（如javac）编译成字节码，字节码再由虚拟机解释或编译为机器码执行。虚拟机可以通过即时编译（JIT，Just-In-Time）将字节码转换为机器码，提高执行效率。
+</blockquote>
+
+<b>跨平台性</b>：字节码可以在不同操作系统上运行，只要该操作系统支持相应的虚拟机。
+
+<b>安全性</b>：字节码经过虚拟机的验证，确保了代码的安全性，避免了一些常见的安全问题，如内存泄漏和缓冲区溢出。
+
+<b>优化性能</b>：虚拟机可以在运行时对字节码进行优化（如JIT编译），提高程序的执行效率。
+    </p>
+</section>
+</div>
+</body>
+</html>
